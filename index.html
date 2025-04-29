@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cummies Are Yummy Official Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #ffffff; /* white background */
+    }
+    header {
+      background-color: #ffccf9; /* soft pink header */
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    img.main-image {
+      margin-top: 20px;
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+      gap: 20px;
+    }
+    .item {
+      background: #ffffff;
+      border: 2px solid #ffccf9;
+      padding: 20px;
+      width: 220px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .item-details {
+      display: none;
+      margin-top: 10px;
+    }
+    button {
+      background-color: #ffccf9;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #ffe6f7;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    footer ul {
+      list-style-type: disc;
+      text-align: left;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cummies Are Yummy Official Website</h1>
+</header>
+
+<!-- Main Image at the top -->
+<img class="main-image" src="https://files.oaiusercontent.com/file-RJ3vG8VHMi2h4sEJREWn1Y?se=2025-04-29T00%3A06%3A14Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D4077e707-6ce3-4245-a589-c408261b3c91.png&sig=G9/nSvrTlIaDocat3aMvl%2B3iKcFEIQD8MH3CiKwPbNs%3D" alt="Cummies Main Image">
+
+<!-- Items Section -->
+<div class="items">
+  <div class="item" onclick="toggleDetails(0)">
+    <img src="ITEM1_IMAGE_URL_HERE" alt="Cummy Bears">
+    <h2>Pack of 30 Cummy Bears</h2>
+    <div class="item-details">
+      <p>Price: $9.99</p>
+      <p>Description: A pack full of delicious, classic cummy bears to enjoy anytime.</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="item" onclick="toggleDetails(1)">
+    <img src="ITEM2_IMAGE_URL_HERE" alt="Sour Cummies">
+    <h2>Pack of 30 Sour Cummies</h2>
+    <div class="item-details">
+      <p>Price: $10.99</p>
+      <p>Description: Tangy and sweet sour cummies for a flavorful punch.</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="item" onclick="toggleDetails(2)">
+    <img src="ITEM3_IMAGE_URL_HERE" alt="Cummy Worms">
+    <h2>Pack of 30 Cummy Worms</h2>
+    <div class="item-details">
+      <p>Price: $11.99</p>
+      <p>Description: Stretchy, chewy cummy worms — a perfect twist of fun and taste.</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="item" onclick="toggleDetails(3)">
+    <img src="ITEM4_IMAGE_URL_HERE" alt="Large Cummy Bear">
+    <h2>One Large Cummy Bear</h2>
+    <div class="item-details">
+      <p>Price: $24.99</p>
+      <p>Description: A giant-sized cummy bear for the ultimate indulgence.</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Why We Sell Cummies -->
+<footer>
+  <h3>Why We Sell Cummies:</h3>
+  <ul>
+    <li>They taste amazing</li>
+    <li>Made with love and care</li>
+    <li>We believe everyone deserves a treat</li>
+    <li>Supporting small, local producers</li>
+  </ul>
+</footer>
+
+<script>
+function toggleDetails(index) {
+  const details = document.querySelectorAll('.item-details');
+  details[index].style.display = (details[index].style.display === 'block') ? 'none' : 'block';
+}
+</script>
+
+</body>
+</html>
+
